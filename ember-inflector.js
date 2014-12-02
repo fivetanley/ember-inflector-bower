@@ -469,6 +469,8 @@
         __exports__['default'] = ember$inflector$lib$system$inflector$$default;
         return ember$inflector$lib$system$inflector$$default;
       });
+    } else if (typeof module !== 'undefined' && module['exports']){
+      module['exports'] = ember$inflector$lib$system$inflector$$default;
     }
 }).call(this);
 
