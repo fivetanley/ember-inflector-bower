@@ -464,7 +464,7 @@
 
     var ember$inflector$lib$main$$default = ember$inflector$lib$system$inflector$$default;
 
-    if (typeof 'define' !== 'undefined' && define.amd){
+    if (typeof define !== 'undefined' && define.amd){
       define('ember-inflector', ['exports'], function(__exports__){
         __exports__['default'] = ember$inflector$lib$system$inflector$$default;
         return ember$inflector$lib$system$inflector$$default;
