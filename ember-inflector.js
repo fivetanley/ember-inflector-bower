@@ -344,9 +344,9 @@
        * @method singularize
        * @param {String|Property} word word to singularize
       */
-      Ember.HTMLBars.helper('singularize', function(params){
+      Ember.HTMLBars._registerHelper('singularize', Ember.HTMLBars.makeBoundHelper(function(params){
         return ember$inflector$lib$system$string$$singularize(params[0]);
-      });
+      }));
 
       /**
        *
@@ -365,7 +365,7 @@
        * @param {Number|Property} [count] count of objects
        * @param {String|Property} word word to pluralize
       */
-      Ember.HTMLBars.helper('pluralize', function(params) {
+      Ember.HTMLBars._registerHelper('pluralize', Ember.HTMLBars.makeBoundHelper(function(params) {
         var count, word;
 
         if (params.length === 1) {
@@ -380,7 +380,7 @@
           }
           return count + " " + word;
         }
-      });
+      }));
     } else {
       /**
        *
